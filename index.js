@@ -1,5 +1,6 @@
-// Constructor for making "book" objects
+let myLibrary = [];
 
+// Constructor for making "book" objects
 function Book(title, author, pages, read=false) {
     this.title = title
     this.author = author
@@ -11,10 +12,9 @@ function Book(title, author, pages, read=false) {
     }
 }
 
+
+// set up mock data
 const book1 = new Book('The Hobbit', 'J. R. R. Tolkien', 295)
-
 const book2 = new Book('Harry Potter and the Sorceror\'s Stone', 'J.K. Rowling', 309)
-
-console.log(book1.info())
-
-console.log(book2.info())
+myLibrary.push(book1)
+myLibrary.push(book2)
